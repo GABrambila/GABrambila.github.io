@@ -16,13 +16,20 @@
     <main class="container">
         <h1>Consulta de Endereços </h1>
         <label for="CEP">Digite o CEP: </label>
-        <input type="text" id="CEP">
+        <input type="text" id="CEP" maxlength="8">
         <button id="consultar">Consultar</button>
         <div id="result">
+            <!--AJAX-->
 
-          
         </div>
     </main>
+
+    <button id="modo-noturno" class="lampada">
+        <i class="fa-solid fa-moon"></i>
+       <!--<i class="fas fa-lightbulb"></i>-->
+
+    </button>
+
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/js-cookie/dist/js.cookie.min.js"></script>
     <script src="scripts.js"></script>
