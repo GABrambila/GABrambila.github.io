@@ -42,6 +42,26 @@ $(document).ready(function(){
     }
 
     $('body').on('click', '#modo-noturno', function(){
-          $('body').toggleClass('dark-mode'); 
+          $('body').toggleClass('dark-mode');
+          $('body').find('.container').toggleClass('dark-mode');
+          $(this).toggleClass('apagada');
+
+          if(Cookies.get('modo-noturno') == 'on'){
+            Cookies.set('modo-noturno', 'off')
+          }else{
+            Cookies.set('modo-noturno', 'on')
+          }
+
     });
+
+    $('body').on('input', '#CEP', function(){
+        //alert($(this).val()); 
+        $(this).val($(this).val().replace(/\D/g, ''));
+    })
+
+    if(Cookies.get('modo-noturno') == 'on'){
+        $('body').toggleClass('dark-mode');
+        $('body').find('.container').toggleClass('dark-mode');
+        $('body').find('.lampada').toggleClass('apagada');
+      }
 })
