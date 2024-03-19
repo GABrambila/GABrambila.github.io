@@ -30,15 +30,17 @@ body{
 #CEP{
     padding: 5px;
     font-size: 15px;
+    border-radius: 3px;
 }
 
 #consultar{
-    padding: 5px 15px;
+    padding: 5px 20px;
     font-size: 15px;
     cursor: pointer;
     background-color: #0015ff;
     color: #FFF;
     border: 0;
+    border-radius: 3px;
 }
 
 #modo-noturno{
@@ -63,4 +65,13 @@ body{
 }
 .lampada{
     transition-duration: 500ms;
+}
+
+.msg-erro{
+    margin-top: 10px;
+    color: rgb(252, 5, 5);
+    font-weight: bold;
+}
+label{
+    display: block;
 }

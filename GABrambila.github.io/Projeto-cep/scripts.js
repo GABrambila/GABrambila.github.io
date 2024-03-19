@@ -10,7 +10,8 @@ $(document).ready(function(){
         const cep = $('#CEP').val(); 
 
         if(cep.length !== 8){
-            alert('Informe um CEP válido!');
+            //alert('Informe um CEP válido!');
+            $('body').find("#result").html('<div class="msg-erro">Informe um CEP válido!</div>')
             return false; 
         }
 
