@@ -1,11 +1,22 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
 #root {
-   max-width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-.modo-escuro{
+
+.modo-escuro {
   background-color: rgb(60, 60, 60);
+  color: #FFF;
+}
+
+.main {
+  height: 100vh;
 }
 
 /* .logo {
